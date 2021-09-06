@@ -4,3 +4,74 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/developer.jpg) center/cover;
+    overflow: hidden;
+}
+
+.app {
+    margin: 300px auto;
+    width: 80%;
+    min-width: 450px;
+    max-width: 600px;
+    height: 260px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 50px 15px black;
+    border-radius: 20px;
+    background:rgb(160 157 111 / 62%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#password-output {
+    width: 350px;
+    text-align: center;
+    margin: 35px auto;
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+}
+
+/* input[type="range"] {
+    background: none;
+} */
+
+#display-password-length {
+    background: none;
+    border: none;
+    width: 30px;
+    padding-left: 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container {
+    margin: 30px auto;
+    display: flex;
+}
+
+label {
+    user-select: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: 0.3s;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked + label {
+    transform: scale(1.3);
+    filter: brightness(120%);
+}
